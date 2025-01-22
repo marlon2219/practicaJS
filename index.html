@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <title>TIENDA</title>
+</head>
+<script src="data.js"></script>
+
+<body>
+  <header>
+    <!--navegador-->
+    <nav class="nav">
+      <div class="logo">
+        <figure>
+          <img class="" src="./assets/logo.png" alt="">
+          <!--<figcaption>logo</figcaption>  **preguntar si es necesairo el figcaption -->
+        </figure>
+      </div>
+      <div>
+        <ul class="enlaces-principales">
+          <!--***preguntar si la imagen esta bien aqui o hay que ponerla aparate con la etiqueta figure***-->
+          <li><a href=""></a><img </li>
+          <li><a href=""></a>Inicio</li>
+          <li><a href=""></a>Plantas</li>
+          <li><a href=""></a>Blog</li>
+          <li><a href=""></a>Contacto</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="enlaces-secundarios">
+          <i class="fa-solid fa-envelope"></i>
+          <i class="fa-solid fa-phone"></i>
+          <button id="carrito-icon"> <i class="fa-solid fa-cart-shopping"></i></button>
+          <i class="fa-solid fa-user"></i>
+      </div>
+    </nav>
+  </header>
+  <!--carrito-->
+  <div id="carrito-menu" class="carrito-menu hidden">
+    <h3>Carrito</h3>
+    <ul>
+      <li> Lavanda- 12.50€ - 1 <button>eliminar</button><button>+</button><button>-</button></li>
+      <li> Lavanda- 12.50€ - 1 <button>eliminar</button><button>+</button><button>-</button></li>
+
+      <li> Lavanda- 12.50€ - 1 <button>eliminar</button><button>+</button><button>-</button></li>
+
+    </ul>
+    <button>Vaciar Carrito</button>
+    <button>Proceder a Comprar</button>
+    <p>Total: 45.00€</p>
+  </div>
+  <main>
+    <!-- 
+    <section class="seccion-imagen">
+      <div class="contenedor contenido">
+        <h1>Perfumes Exclusivos para Cada Estilo</h1>
+        <button>contacto</button>
+      </div>
+    </section> -->
+    <section id="productos" class="contenedor contenedor-grid">
+      <article>
+        <figure>
+          <img src="./assets/perfume1.webp" alt="">
+        </figure>
+        <h2>Aloe Vera</h2>
+        <p>Cactus San Pedro</p>
+        <p>15.49</p>
+        <button id="btnAddProducto">Agregar al Carrito</button>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/perfume1.webp" alt="">
+        </figure>
+        <h2>Aloe Vera</h2>
+        <p>Cactus San Pedro</p>
+        <p>15.49</p>
+        <button id="btnAddProducto">Agregar al Carrito</button>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/perfume1.webp" alt="">
+        </figure>
+        <h2>Aloe Vera</h2>
+        <p>Cactus San Pedro</p>
+        <p>15.49</p>
+        <button id="btnAddProducto">Agregar al Carrito</button>
+      </article>
+      <article>
+        <figure>
+          <img src="./assets/perfume1.webp" alt="">
+        </figure>
+        <h2>Aloe Vera</h2>
+        <p>Cactus San Pedro</p>
+        <p>15.49</p>
+        <button id="btnAddProducto">Agregar al Carrito</button>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>2025 GreenShop todos los derechos reservados</p>
+  </footer>
+</body>
+
+</html>

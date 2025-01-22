@@ -1,0 +1,70 @@
+/* Reset de estilos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Configuración de tipografía básica */
+html {
+  font-size: 16px; /* Base para escalabilidad */
+  line-height: 1.5; /* Espaciado cómodo */
+  font-family: Arial, sans-serif; /* Familia predeterminada */
+  -webkit-text-size-adjust: 100%; /* Ajuste en dispositivos móviles */
+  scroll-behavior: smooth; /* Suavidad al desplazarse */
+}
+
+/* Asegurar ancho total en el cuerpo */
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo por defecto para enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Eliminar listas predeterminadas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Normalizar imágenes */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Botones */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Inputs y Textareas */
+input,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Asegurar límites de tamaño en contenedores */
+:where([hidden]) {
+  display: none !important;
+}
