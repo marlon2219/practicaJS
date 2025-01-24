@@ -1,0 +1,35 @@
+//datos
+const productos = [
+  new Producto(1, "Aloe Vera", "https://example.com/aloe-vera.jpg", "Planta suculenta con propiedades medicinales.", 10.99, 25),
+  new Producto(2, "Cactus San Pedro", "https://example.com/cactus-san-pedro.jpg", "Cactus ornamental de crecimiento rápido.", 15.49, 40),
+  new Producto(3, "Helecho Boston", "https://example.com/helecho-boston.jpg", "Planta de interior con hojas colgantes verdes.", 8.99, 30),
+  new Producto(4, "Monstera Deliciosa", "https://example.com/monstera.jpg", "Planta tropical conocida por sus hojas grandes y perforadas.", 22.99, 15),
+  new Producto(5, "Lavanda", "https://example.com/lavanda.jpg", "Planta aromática con flores moradas.", 12.50, 20),
+  new Producto(6, "Bambú de la Suerte", "https://example.com/bambu.jpg", "Planta decorativa ideal para oficinas.", 7.99, 50),
+  new Producto(7, "Poto", "https://example.com/poto.jpg", "Planta colgante fácil de cuidar.", 9.49, 60),
+  new Producto(8, "Orquídea Blanca", "https://example.com/orquidea.jpg", "Flor elegante perfecta para decorar interiores.", 19.99, 18),
+  new Producto(9, "Suculenta Echeveria", "https://example.com/echeveria.jpg", "Planta compacta ideal para terrarios.", 5.99, 70),
+  new Producto(10, "Dracaena Marginata", "https://example.com/dracaena.jpg", "Planta alta con hojas delgadas.", 16.99, 12),
+  new Producto(11, "Ficus Lyrata", "https://example.com/ficus.jpg", "Planta con hojas grandes en forma de violín.", 24.99, 10),
+  new Producto(12, "Jazmín", "https://example.com/jazmin.jpg", "Planta trepadora con flores aromáticas.", 14.49, 22),
+  new Producto(13, "Palma Areca", "https://example.com/palma-areca.jpg", "Palma decorativa perfecta para interiores.", 29.99, 8),
+  new Producto(14, "Geranio", "https://example.com/geranio.jpg", "Planta con flores coloridas, ideal para exteriores.", 6.99, 45),
+  new Producto(15, "Romero", "https://example.com/romero.jpg", "Planta aromática ideal para cocinar.", 4.99, 35),
+  new Producto(16, "Calathea", "https://example.com/calathea.jpg", "Planta de interior con hojas decorativas.", 18.99, 20),
+  new Producto(17, "Cactus Luna", "https://example.com/cactus-luna.jpg", "Cactus pequeño con flores de colores vivos.", 6.49, 50),
+  new Producto(18, "Perejil", "https://example.com/perejil.jpg", "Planta culinaria popular en la cocina.", 3.99, 60),
+  new Producto(19, "Hiedra", "https://example.com/hiedra.jpg", "Planta trepadora ideal para decorar muros.", 11.99, 28),
+  new Producto(20, "Mentha Piperita", "https://example.com/menta.jpg", "Planta aromática ideal para infusiones.", 4.49, 40),
+  new Producto(21, "Cinta o Malamadre", "https://example.com/cinta.jpg", "Planta colgante resistente y fácil de cuidar.", 7.49, 35),
+  new Producto(22, "Hierba de Gato", "https://example.com/hierba-gato.jpg", "Planta para el bienestar de los gatos.", 5.49, 50),
+  new Producto(23, "Arce Japonés", "https://example.com/arce.jpg", "Pequeño árbol con hojas de colores llamativos.", 34.99, 5),
+  new Producto(24, "Planta Serpiente", "https://example.com/serpiente.jpg", "Planta resistente con hojas alargadas.", 9.99, 40),
+  new Producto(25, "Clavel", "https://example.com/clavel.jpg", "Planta con flores coloridas y perfumadas.", 6.49, 38),
+  new Producto(26, "Agave Azul", "https://example.com/agave.jpg", "Planta suculenta usada para producir tequila.", 21.99, 10),
+  new Producto(27, "Hierba Buena", "https://example.com/hierba-buena.jpg", "Planta ideal para cocteles y cocina.", 3.99, 45),
+  new Producto(28, "Crisantemo", "https://example.com/crisantemo.jpg", "Planta con flores grandes y coloridas.", 8.49, 25),
+  new Producto(29, "Acebo", "https://example.com/acebo.jpg", "Planta decorativa popular en Navidad.", 17.49, 12),
+  new Producto(30, "Peperomia", "https://example.com/peperomia.jpg", "Planta compacta ideal para interiores.", 12.99, 30)
+];
+  console.log(productos);
+

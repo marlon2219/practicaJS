@@ -2,87 +2,133 @@
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: #dbeddc;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 h1 {
     font-size: 2vw;
 
 }
-header{
-    background-color: black;
+
+header {
+    background-color: #45ab57;
 }
 
 .contenedor {
     max-width: 1004px;
     margin: 0 auto;
     padding: 0 16px;
-    
-
 
 }
 
 
 /*navegador*/
-.nav{
-
-    background-color:  #45ab57;
+.nav {
+    background-color: #45ab57;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    padding: 15px;
-    
-    
-    
-    
+    padding: 20px;
+    max-width: 1204px;
+    margin: 0 auto;
+
 }
-.logo{
-    img{
-        width: 90px;
+.contenedor-hamburguesa{
+    display: flex;
+}
+
+.logo {
+    img {
+        width: 180px;
     }
 }
-.enlaces-principales{
-   color: aliceblue;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    font-weight: bold;
-    
-   
-}
-.enlaces-secundarios{
+
+.enlaces-principales {
     color: aliceblue;
     display: flex;
     align-items: center;
     gap: 20px;
-    button{
+    font-weight: bold;
+
+
+}
+
+.enlaces-secundarios {
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    button {
         color: aliceblue;
     }
-   
+    li{
+        background-color: red;
+    }
+
 }
+
 /*carrito*/
 .carrito-menu {
-    position: absolute;
-    top: 100px;
-    width: 250px;
+    position: fixed;
+    
+    top: 150px;
+    width: 430px;
     padding: 15px;
     background-color: white;
     border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     z-index: 100;
     transition: opacity 0.5s ease, transform 0.5s ease;
-    opacity: 0; /* Comienza invisible */
-    transform: translateY(-20px); /* Comienza ligeramente hacia arriba */
-    visibility: hidden; /* Ocultar visualmente pero permitir transición */
-  }
+    opacity: 0;
+    /* Comienza invisible */
+    transform: translateY(-20px);
+    visibility: hidden;
+}
 
 .hidden {
-    opacity: 1; /* Totalmente visible */
-    transform: translateY(0); /* Vuelve a su posición original */
-    visibility: visible; /* Mostrar el elemento */
-  }
+    opacity: 1;
+    /* Totalmente visible */
+    transform: translateY(0);
+    /* Vuelve a su posición original */
+    visibility: visible;
+    /* Mostrar el elemento */
 
+}
+.display {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.carrito-menu .btn-carrito {
+    padding: 10px;
+    color: white;
+    border-radius: 6px;
+}
+
+.vaciar {
+    margin-top: 20px;
+    background-color: #45ab57;
+}
+.comprar {
+    background-color: #45ab57;
+
+}
+.anadir {
+    background-color: #45ab57;
+}
+.btn-carrito-opciones {
+    background-color: rgba(201, 20, 20, 0.921);
+    padding: 6px;
+    margin:3px;
+    margin-left: 7px;
+    color: white; 
+     
+}
 
 
 
@@ -96,6 +142,7 @@ header{
     background-position: center;
     background-repeat: no-repeat;
 }
+
 /* hero --borrar
 .contenido {
     color: aliceblue;
@@ -122,40 +169,113 @@ header{
     */
 
 .contenedor-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+
+    img {
+        border-radius: 10px;
+    }
+
+    article {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(252, 252, 252, 0.718);
+        text-align: center;
+
+        p,
+        h2 {
+            margin: 25px 0;
+        }
+    }
+    article:hover{
+        transform: scale(1.05); /* Aumenta el tamaño */
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Añade sombra */
+        background-color: rgb(252, 252, 252);
         
-        img{
-            border-radius: 10px;
-        }
-        article{
-            padding: 20px;
-            border-radius: 10px;
-            background-color: rgb(252, 252, 252);
-            text-align: center;
+    }
 
-            p,h2{
-                margin: 25px 0;
-            }
-        }
-        button{
-            margin: 0;
-            color: white;
-            width: 100%;
-            height: 50px;
-            border-radius: 10px;
-            font-size: 16px;
-            background-color: #45ab57;
-        }
+    button {
+        margin: 0;
+        color: white;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        font-size: 16px;
+        
+        background-color: #45ab57;
+    }
 
-    
+
 }
-.footer{
+
+.footer {
+    color: white;
     padding: 5px;
     background-color: red;
     text-align: center;
     font-size: 20px;
     background-color: #45ab57;
 }
+
+
+@media (max-width:600px) {
+    /* Estilos específicos para móviles pequeños */
+    .contenedor-grid{
+    grid-template-columns: repeat(1, 1fr);
+    }
+    .nav{
+        flex-direction:column;
+    }  
+    .contenedor-hamburguesa{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                margin-top: 30px;
+                gap: 150px;
+                img{
+                    width: 200px;
+                }
+    }
+   
+    .enlaces-secundarios{
+        display: none;
+        background-color: rgb(20, 100, 220);
+    }
+    .enlaces-principales{
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+        width: 300px;
+        li{
+            
+            border-bottom: 2px solid white;
+            font-size: 20px;
+        }
+        li:hover{
+            background-color: rgba(255, 255, 255, 0.42);
+            
+        }
+        
+        display: none;
+        li{
+            padding: 20px;
+            
+        }
+    }
+    .display{
+        display: block;
+    }     
+  }
+
+
+  @media (min-width: 601px) and (max-width: 767.98px) {
+    /* Estilos específicos para tabletas */
+    .contenedor-grid{
+        grid-template-columns: repeat(2, 1fr);
+        }
+    
+  }
+  
+  
